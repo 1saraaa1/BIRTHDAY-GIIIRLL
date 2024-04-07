@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #FFD700;
+      color: #333333;
+      font-size: 24px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #FFC800;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .birthday-message {
+      margin-top: 50px;
+      font-size: 24px;
+    }
+
+    .stickers {
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function showBirthdayMessage() {
+      document.getElementById("birthdayMessage").classList.remove("hidden");
+      document.getElementById("buttonContainer").classList.add("hidden");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello dear AYA 💗</h1>
+    <div id="buttonContainer">
+      <button class="button" onclick="showBirthdayMessage()">Click here 🌷</button>
+    </div>
+    <div id="birthdayMessage" class="hidden">
+      <h2 class="birthday-message">HAPPY BIRTHDAY 🎂 MY LITTLE GIRL 🎀🐭</h2>
+      <div class="stickers">
+        <!-- Add your aesthetic stickers and images here -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
