@@ -1,84 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Happy Birthday!</title>
-  <style>
-    body {
-      background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    .container {
-      margin-top: 100px;
-    }
-
-    h1 {
-      font-size: 32px;
-      color: #333333;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: #FFD700;
-      color: #333333;
-      font-size: 24px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 20px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #FFC800;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .birthday-message {
-      margin-top: 50px;
-      font-size: 36px;
-      color: #FF69B4;
-    }
-
-    .stickers {
-      margin-top: 20px;
-    }
-
-    .sticker {
-      display: inline-block;
-      margin: 10px;
-      max-width: 100px;
-    }
-  </style>
-  <script>
-    function showBirthdayMessage() {
-      document.getElementById("birthdayMessage").classList.remove("hidden");
-      document.getElementById("buttonContainer").classList.add("hidden");
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f9e6e6; /* Soft pink background */
+            font-family: 'Georgia', serif;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .message {
+            font-size: 24px;
+            color: #ff99cc; /* Soft pastel pink */
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #ffe6cc; /* Light peach */
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .button:hover {
+            background-color: #ffd699; /* Slightly darker peach on hover */
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1 style="color: #FF69B4;">Hello dear AYA 💗</h1>
-    <div id="buttonContainer">
-      <button class="button" onclick="showBirthdayMessage()">Click here 🌷</button>
+    <div class="container">
+        <div class="message">Hello dear AYAAA💗</div>
+        <a href="#birthday-message" class="button">Click here 🌷</a>
     </div>
-    <div id="birthdayMessage" class="hidden">
-      <h2 class="birthday-message">HAPPY BIRTHDAY 🎂 MY LITTLE GIRL 🎀🐭</h2>
-      <div class="stickers">
-        <img src="https://example.com/sticker1.png" class="sticker" alt="Sticker 1">
-        <img src="https://example.com/sticker2.png" class="sticker" alt="Sticker 2">
-        <img src="https://example.com/sticker3.png" class="sticker" alt="Sticker 3">
-        <!-- Add more sticker images with appropriate URLs -->
-      </div>
+    <div id="birthday-message" class="container">
+        <img src="path/to/sticker1.png" alt="Sticker 1" width="100" height="100">
+        <img src="path/to/sticker2.png" alt="Sticker 2" width="100" height="100">
+        <p>HAPPY BIRTHDAY 🎂 MY LITTLE GIRL 🎀🐭</p>
+        <!-- Add more stickers or aesthetic elements here -->
     </div>
-  </div>
 </body>
 </html>
